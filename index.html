@@ -53,32 +53,131 @@
   </div>
 </body>
 </html>
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <title>Mi página principal</title>
-  <style>
-    body { font-family: Arial, sans-serif; text-align: center; margin-top: 50px; background: #f5f5f5; }
-    h1 { color: #222; }
-    p { font-size: 18px; }
-    a {
-      display: inline-block;
-      margin-top: 20px;
-      padding: 10px 20px;
-      background: #0077cc;
-      color: white;
-      text-decoration: none;
-      border-radius: 8px;
-    }
-    a:hover { background: #005fa3; }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog de Perfumes</title>
+    <style>
+        /* General */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #e6f2f9; /* celeste claro */
+            color: #333;
+        }
+
+        /* Encabezado */
+        header {
+            background-color: #5dade2; /* celeste principal */
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            border-bottom: 4px solid #3498db;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.2rem;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            margin: 0.5rem 0 1.5rem 0;
+        }
+
+        /* Botón */
+        .boton {
+            display: inline-block;
+            background-color: white;
+            color: #3498db;
+            padding: 0.7rem 1.2rem;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 25px;
+            transition: background 0.3s, color 0.3s;
+        }
+
+        .boton:hover {
+            background-color: #3498db;
+            color: white;
+        }
+
+        /* Contenido */
+        main {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        article {
+            background: white;
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        article h2 {
+            color: #3498db;
+            margin-top: 0;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: #5dade2;
+            color: white;
+            margin-top: 2rem;
+        }
+    </style>
 </head>
 <body>
-  <h1>Bienvenidos a mi GitHub Pages</h1>
-  <p>En esta página voy a compartir mis trabajos prácticos de HTML.  
-     El primero es un blog sobre <b>música</b>.</p>
-  
-  <a href="blog1.html">Ir al Blog</a>
+    <header>
+        <h1>El fascinante mundo de los perfumes</h1>
+        <p>En este blog te voy a hablar de los perfumes: su historia y lo complejo que es crear una fragancia deliciosa.</p>
+        <a href="#crear" class="boton">Ir a: Cómo se hace un perfume</a>
+    </header>
+
+    <main>
+        <!-- HISTORIA DE LOS PERFUMES -->
+        <article>
+            <h2>🌿 Los orígenes de los perfumes</h2>
+            <p>El uso de fragancias se remonta a las antiguas civilizaciones de Egipto, Mesopotamia y Roma, donde se usaban aceites y resinas para rituales religiosos y para el cuidado personal.</p>
+        </article>
+
+        <article>
+            <h2>🌸 La evolución en la Edad Media</h2>
+            <p>Durante la Edad Media, los perfumes se mezclaban con hierbas y especias, y eran considerados un lujo reservado para reyes y nobles.</p>
+        </article>
+
+        <article>
+            <h2>💎 La perfumería moderna</h2>
+            <p>Con el paso del tiempo, la perfumería se profesionalizó en Francia, donde surgieron las casas más famosas y los perfumes empezaron a producirse de manera masiva.</p>
+        </article>
+
+        <!-- CÓMO SE HACE UN PERFUME -->
+        <article id="crear">
+            <h2>🔬 Lo complicado de crear un perfume</h2>
+            <p>Un perfume no es solo un aroma: está compuesto por notas de salida, corazón y fondo, que deben combinarse en perfecta armonía. Lograr este balance es un verdadero arte.</p>
+        </article>
+
+        <article>
+            <h2>🧪 Materias primas</h2>
+            <p>Los perfumistas trabajan con aceites esenciales, extractos de flores, especias y componentes sintéticos. La calidad de cada ingrediente cambia radicalmente el resultado.</p>
+        </article>
+
+        <article>
+            <h2>💡 El toque final</h2>
+            <p>Un perfume no solo debe oler bien en el momento, sino evolucionar con el tiempo sobre la piel. Por eso, crear una fragancia rica y duradera es tan desafiante.</p>
+        </article>
+    </main>
+
+    <footer>
+        <p>Blog creado para proyecto en GitHub Pages - 2025</p>
+    </footer>
 </body>
 </html>
